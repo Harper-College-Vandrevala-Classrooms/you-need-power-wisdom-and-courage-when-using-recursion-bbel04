@@ -2,10 +2,7 @@ package com.csc;
 
 public class TriangleNumberCalculator {
   public static void main(String[] args) {
-
-    System.out.println(value(44000));  // This should print out 
-
-    /* 
+    
     System.out.println(add(1,1));  // This should print out 2
     System.out.println(add(2, 3)); // This should print out 9
     System.out.println(add(4, 2)); // This should print out 13
@@ -13,9 +10,11 @@ public class TriangleNumberCalculator {
     System.out.println(subtract(1, 1)); // This should print out 0
     System.out.println(subtract(2, 3)); // This should print out -3
     System.out.println(subtract(4, 2)); // This should print out 7
-    */
 
-    //System.out.println(subtract(43211,43210));
+    System.out.println(multiply(2, 3)); // This should print out 18
+
+    System.out.println(divide(3, 2)); // This should print out 2
+
   }
 
   static int value(int n) {
@@ -32,6 +31,14 @@ public class TriangleNumberCalculator {
 
   static int subtract(int n, int m) {
     return (value(n) - value(m));
+  }
+
+  static int multiply(int n, int m) {  //multiply nth and mth triangle numbers
+    return value(n) * value(m);
+  }
+
+  static int divide(int n, int m) {   //divide nth and mth triangle numbers
+    return value(n) / value(m);
   }
 }
 

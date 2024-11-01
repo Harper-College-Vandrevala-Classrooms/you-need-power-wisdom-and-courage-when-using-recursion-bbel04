@@ -17,19 +17,26 @@ public class TestTriangleNumberCalculator {
   @Test
   void nthTriangleNumber() {
     int triangleNumber = 3;
-    TriangleNumberCalculator.value(triangleNumber);
     assertEquals(6, TriangleNumberCalculator.value(triangleNumber));
   }
 
   @Test
   void addNthAndMthTriangleNumber() {
-    TriangleNumberCalculator.add(3,4);
     assertEquals(16, TriangleNumberCalculator.add(3,4));
   }
 
   @Test
   void subtractNthAndMthTriangleNumber() {
-    TriangleNumberCalculator.subtract(3,4);
-    assertEquals(3, TriangleNumberCalculator.add(3,2));
+    assertEquals(4, TriangleNumberCalculator.subtract(4,3));
+  }
+
+  @Test
+  void multiplyNthAndMthTriangleNumber() {
+    assertEquals(60, TriangleNumberCalculator.multiply(4,3));
+  }
+
+  @Test
+  void divideNthAndMthTriangleNumber() {
+    assertEquals(5, TriangleNumberCalculator.divide(5,2));
   }
 }
